@@ -146,16 +146,16 @@ export default class ColumnChart extends Component {
       <View style={StyleSheet.flatten([styles.wrapper, {
         backgroundColor: this.props.backgroundColor
       }])}>
-        <View style={{paddingRight: 5}}>
+        {/* <View style={{paddingRight: 5}}>
           {this.props.showYAxisLabel &&
             drawYAxisLabels(this.state.guideArray, this.props.height + 20, this.props.minValue, this.props.labelColor, this.props.yAxisSymbol)}
-        </View>
+        </View> */}
         <View style={styles.mainContainer}>
           <ScrollView ref={scrollView => this.scrollView = scrollView} horizontal>
             <View>
               <View ref='chartView' style={styles.chartContainer}>
-                {drawYAxis(this.props.yAxisColor)}
-                {drawGuideLine(this.state.guideArray, this.props.yAxisGridLineColor)}
+                {/* {drawYAxis(this.props.yAxisColor)}
+                {drawGuideLine(this.state.guideArray, this.props.yAxisGridLineColor)} */}
                 {this.renderColumns(fadeAnim)}
               </View>
               {drawXAxis(this.props.xAxisColor)}

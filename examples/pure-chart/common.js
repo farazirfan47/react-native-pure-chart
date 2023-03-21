@@ -348,7 +348,7 @@ export const drawXAxisLabels = (sortedData, gap, color = '#000000', showEvenNumb
               width: gap,
               alignItems: 'center'
             }}>
-              <Text style={{fontSize: 9, color: color}}>
+              <Text style={{fontSize: 13, color: "white", fontWeight: "bold"}}>
                 {
                   // data[3]
                   data['x']
